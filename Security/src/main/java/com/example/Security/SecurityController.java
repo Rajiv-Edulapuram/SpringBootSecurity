@@ -9,7 +9,15 @@ public class SecurityController {
 
     @GetMapping("/")
     public String sayWelcome(){
-        return "Welcome";
+        return "<h2>Welcome</h2>";
+    }
+    @GetMapping("/user")
+    public String sayWelcomeUser(){
+        return "<h2>Welcome User!!</h2>";
+    }
+    @GetMapping("/admin")
+    public String sayWelcomeAdmin(){
+        return "<h2>Welcome Admin!!!</h2>";
     }
 
 }
